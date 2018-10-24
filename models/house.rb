@@ -1,18 +1,19 @@
 class House
 
   attr_reader :id
-  attr_accessor :name
+  attr_accessor :name, :logo_url
 
   def initialize(options)
     @id = options['id'].to_i if options['id']
     @name = options['name']
+    @logo_url = options['logo_url']
   end
 
   def save()
-    sql = "INSERT INTO houses (name)
-      VALUES ($1)
+    sql = "INSERT INTO houses (name, logo_url)
+      VALUES ($1, $2)
       RETURNING id"
-    values = [@name]
+    values = [@name, @logo_url]
     house_data = SqlRunner.run(sql, values)
     @id = house_data.first()['id'].to_i
   end

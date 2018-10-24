@@ -3,7 +3,8 @@ DROP TABLE houses;
 
 CREATE TABLE houses(
   id SERIAL4 PRIMARY KEY,
-  name VARCHAR(255)
+  name VARCHAR(255),
+  logo_url VARCHAR
 );
 
 CREATE TABLE students(

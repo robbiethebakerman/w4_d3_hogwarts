@@ -1,10 +1,11 @@
 <h1>All Students</h1>
 
 <% for student in @students %>
+<% house = student.find_house %>
+<img class="house-logo" src="<%= house.logo_url %>" alt="Logo for <%= house.name%>">
 <p>First Name: <%= student.first_name %></p>
 <p>Last Name: <%= student.last_name %></p>
 <p>Age: <%= student.age %></p>
-<% house = student.find_house %>
 <p>House: <%= house.name %></p>
 <% end %>
 

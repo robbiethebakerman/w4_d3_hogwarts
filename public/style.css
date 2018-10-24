@@ -1,3 +1,19 @@
+.house-logo {
+  height: 100px;
+}
+
+h1 {
+  font-family: Verdana, sans-serif;
+  /* text-align:center; */
+}
+
+p {
+  font-family: Verdana, sans-serif;
+  /* text-align:center; */
+}
+
+/* nav bar */
+
 .nav{
   border:1px solid #ccc;
   border-width:1px 0;
@@ -11,7 +27,7 @@
   display:inline-block;
   text-color:#eea0d0;
   /* width: 140px; */
-  font-family: "Montserrat"
+  font-family: Verdana, sans-serif;
 }
 .nav a{
   display:inline-block;
@@ -24,6 +40,8 @@
 .nav a:hover{
   background-color: #7582e6;
 }
+
+/* new student form */
 
 .new-update {
   width: 500px;
@@ -86,13 +104,4 @@ select:focus {
   margin-top: 7px;
   width: 48%;
   left: 26%;
-}
-
-h1 {
-  text-align:center;
-}
-
-p {
-  font-family: "Montserrat";
-  text-align:center;
 }
