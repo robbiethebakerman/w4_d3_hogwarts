@@ -13,7 +13,7 @@ get "/all-students" do
   erb(:index)
 end
 
-get "/home/new-student" do
+get "/new-student" do
   @houses = House.find_all()
   erb(:new)
 end
